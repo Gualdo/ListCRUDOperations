@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		45FDB8CB23C8A1870081965F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FDB8CA23C8A1870081965F /* AppDelegate.swift */; };
 		45FDB8CD23C8A1870081965F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FDB8CC23C8A1870081965F /* SceneDelegate.swift */; };
-		45FDB8CF23C8A1870081965F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FDB8CE23C8A1870081965F /* ContentView.swift */; };
+		45FDB8CF23C8A1870081965F /* PeopleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FDB8CE23C8A1870081965F /* PeopleList.swift */; };
 		45FDB8D123C8A18B0081965F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FDB8D023C8A18B0081965F /* Assets.xcassets */; };
 		45FDB8D423C8A18B0081965F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FDB8D323C8A18B0081965F /* Preview Assets.xcassets */; };
 		45FDB8D723C8A18B0081965F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45FDB8D523C8A18B0081965F /* LaunchScreen.storyboard */; };
+		45FDB8E223C8A2BE0081965F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FDB8E123C8A2BE0081965F /* Person.swift */; };
+		45FDB8E423C8A9770081965F /* PersonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FDB8E323C8A9770081965F /* PersonRow.swift */; };
+		45FDB8E623C8B0DB0081965F /* PersonForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FDB8E523C8B0DB0081965F /* PersonForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		45FDB8C723C8A1870081965F /* ListCrudOperations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListCrudOperations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45FDB8CA23C8A1870081965F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45FDB8CC23C8A1870081965F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		45FDB8CE23C8A1870081965F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		45FDB8CE23C8A1870081965F /* PeopleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleList.swift; sourceTree = "<group>"; };
 		45FDB8D023C8A18B0081965F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45FDB8D323C8A18B0081965F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		45FDB8D623C8A18B0081965F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45FDB8D823C8A18B0081965F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45FDB8E123C8A2BE0081965F /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		45FDB8E323C8A9770081965F /* PersonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRow.swift; sourceTree = "<group>"; };
+		45FDB8E523C8B0DB0081965F /* PersonForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +62,9 @@
 		45FDB8C923C8A1870081965F /* ListCrudOperations */ = {
 			isa = PBXGroup;
 			children = (
-				45FDB8CA23C8A1870081965F /* AppDelegate.swift */,
-				45FDB8CC23C8A1870081965F /* SceneDelegate.swift */,
-				45FDB8CE23C8A1870081965F /* ContentView.swift */,
-				45FDB8D023C8A18B0081965F /* Assets.xcassets */,
-				45FDB8D523C8A18B0081965F /* LaunchScreen.storyboard */,
-				45FDB8D823C8A18B0081965F /* Info.plist */,
+				45FDB8E023C8A2B30081965F /* Models */,
+				45FDB8DE23C8A1DC0081965F /* Supporting Files */,
+				45FDB8DF23C8A2480081965F /* Views */,
 				45FDB8D223C8A18B0081965F /* Preview Content */,
 			);
 			path = ListCrudOperations;
@@ -73,6 +76,36 @@
 				45FDB8D323C8A18B0081965F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		45FDB8DE23C8A1DC0081965F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45FDB8CA23C8A1870081965F /* AppDelegate.swift */,
+				45FDB8CC23C8A1870081965F /* SceneDelegate.swift */,
+				45FDB8D023C8A18B0081965F /* Assets.xcassets */,
+				45FDB8D523C8A18B0081965F /* LaunchScreen.storyboard */,
+				45FDB8D823C8A18B0081965F /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45FDB8DF23C8A2480081965F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				45FDB8CE23C8A1870081965F /* PeopleList.swift */,
+				45FDB8E323C8A9770081965F /* PersonRow.swift */,
+				45FDB8E523C8B0DB0081965F /* PersonForm.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		45FDB8E023C8A2B30081965F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				45FDB8E123C8A2BE0081965F /* Person.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45FDB8E223C8A2BE0081965F /* Person.swift in Sources */,
 				45FDB8CB23C8A1870081965F /* AppDelegate.swift in Sources */,
 				45FDB8CD23C8A1870081965F /* SceneDelegate.swift in Sources */,
-				45FDB8CF23C8A1870081965F /* ContentView.swift in Sources */,
+				45FDB8CF23C8A1870081965F /* PeopleList.swift in Sources */,
+				45FDB8E623C8B0DB0081965F /* PersonForm.swift in Sources */,
+				45FDB8E423C8A9770081965F /* PersonRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +324,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ListCrudOperations/Preview Content\"";
 				DEVELOPMENT_TEAM = 273FZ5G5B8;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ListCrudOperations/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ListCrudOperations/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +344,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ListCrudOperations/Preview Content\"";
 				DEVELOPMENT_TEAM = 273FZ5G5B8;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ListCrudOperations/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ListCrudOperations/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
